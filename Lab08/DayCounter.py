@@ -1,18 +1,3 @@
-# import datetime
- 
-
-# aa = datetime.date(2010,1,1)
-# bb = datetime.date(2010,10,30)
-# cc = int(bb-aa)
-# week = int(cc.days) #кол-во недель
-# week=week//7
-# fivedayweek=cc-week*5
-# sixdayweek=cc-week*6
-
-# print(week)
-# print(fivedayweek)
-# print(sixdayweek)
-
 from tkinter import *
 import datetime
 
