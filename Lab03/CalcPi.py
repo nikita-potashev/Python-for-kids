@@ -1,7 +1,12 @@
+import time
+
 def calcPi(n):
   return ( (4*n*n) / ( (2*n-1) * (2*n+1) ) )
 
-epsilon=1e-10
+
+start_time = time.time() #start 
+
+epsilon=1e-17
 n=1
 pi1=1
 pi2=1
@@ -14,9 +19,9 @@ while True:
   if (abs(pi2-pi1)<=epsilon):
     break
   
-    
-    
+  
+print("--- %s seconds ---" % (time.time() - start_time)) #end  
 print (pi*2)
 
-
+#after 1*10^-16 stopped in case of bad method
 
