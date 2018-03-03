@@ -1,16 +1,3 @@
-#One of the most stupid tasks that I ever solved
-
-
-# Sunday = datetime.date(2018,3, 4)
-# Monday = datetime.date(2018,3, 5)  #year, month, day
-# Tuesday = datetime.date(2018,3, 6)
-# print(Sunday.strftime("%A"))
-# print(Monday.strftime("%A"))
-# print(Tuesday.strftime("%A"))
-# print(Sunday==1 and Monday==2 and Tuesday==3)
-
-
-
 from tkinter import *
 import datetime
 
@@ -21,9 +8,9 @@ def out(value):
 
 
 def calc():
-	Sunday = datetime.date(2018,3, 4)
-	Monday = datetime.date(2018,3, 5)  #year, month, day
-	Tuesday = datetime.date(2018,3, 6)
+	Sunday = datetime.date(2018,3, 4).weekday()
+	Monday = datetime.date(2018,3, 5).weekday()  #year, month, day
+	Tuesday = datetime.date(2018,3, 6).weekday()
 	out(Sunday==1 and Monday==2 and Tuesday==3)
 	
 
